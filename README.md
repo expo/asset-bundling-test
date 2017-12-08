@@ -13,6 +13,7 @@ expu r --localhost
 
 In another terminal,
 ```
+export EXPO_STAGING=1
 expu build:ios -t simulator
 expu build:status
 ```
