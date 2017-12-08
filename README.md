@@ -4,7 +4,7 @@ comments) so testing this way.
 
 Under `universe/apps/`,
 
-In one terminal:
+In one terminal,
 ```
 bootstrap .
 export EXPO_STAGING=1
