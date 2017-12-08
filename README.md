@@ -2,7 +2,7 @@
 or out. Packager decides based on whether they are in bundle (after deletion of
 comments) so testing this way.
 
-Under `universe/apps/`,
+Clone under `universe/apps/`,
 
 In one terminal,
 ```
