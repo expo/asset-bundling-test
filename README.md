@@ -18,7 +18,7 @@ expu build:ios -t simulator
 expu build:status
 ```
 
-When done, copy `.tar.gz` URL, extract, install `.app` in Simulator (by dragging and dropping), try launching when offline.
+When done, copy `.tar.gz` URL, `wget` it, extract, install `.app` in Simulator (by dragging and dropping), try launching when offline.
 
 Expected: Launches, shows images.
 
