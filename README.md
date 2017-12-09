@@ -1,3 +1,5 @@
+Images found at: https://snippets.khromov.se/stock-photo-archive-zip-77-images/
+
 `App.js` lists image `require(...)`s in separate blocks that can be commented in
 or out. Packager decides based on whether they are in bundle (after deletion of
 comments) so testing this way.
