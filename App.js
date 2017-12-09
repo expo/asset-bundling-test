@@ -1,6 +1,6 @@
 import Expo from 'expo';
 import React from 'react';
-import { StyleSheet, Text, View, ScrollView, Image } from 'react-native';
+import { View, ScrollView, Image } from 'react-native';
 
 const imageSets = [
   // `//*` --> enabled, `/*` --> disabled
@@ -85,41 +85,34 @@ const imageSets = [
   //*/
 ];
 
-export default class App extends React.Component {
-  render() {
-    return (
-      <View style={styles.container}>
-        <ScrollView style={{ flex: 1 }}>
-          <View
-            style={{
-              justifyContent: 'center',
-              flexDirection: 'row',
-              flexWrap: 'wrap',
-            }}>
-            {[].concat(...imageSets).map((m, i) => (
-              <Image
-                key={i}
-                style={{
-                  width: 100,
-                  height: 100,
-                  margin: 5,
-                }}
-                source={m}
-              />
-            ))}
-          </View>
-        </ScrollView>
+export default () => (
+  <View
+    style={{
+      paddingTop: Expo.Constants.statusBarHeight,
+      flex: 1,
+      backgroundColor: '#fff',
+      alignItems: 'center',
+      justifyContent: 'center',
+    }}>
+    <ScrollView style={{ flex: 1 }}>
+      <View
+        style={{
+          justifyContent: 'center',
+          flexDirection: 'row',
+          flexWrap: 'wrap',
+        }}>
+        {[].concat(...imageSets).map((m, i) => (
+           <Image
+             key={i}
+             style={{
+               width: 100,
+               height: 100,
+               margin: 5,
+             }}
+             source={m}
+           />
+         ))}
       </View>
-    );
-  }
-}
-
-const styles = StyleSheet.create({
-  container: {
-    paddingTop: Expo.Constants.statusBarHeight,
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
+    </ScrollView>
+  </View>
+);
