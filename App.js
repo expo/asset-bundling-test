@@ -10,7 +10,7 @@ const imageSets = [
   [require('./assets/1/1.jpg')],
   //*/
 
-  /*
+  //*
   [
     require('./assets/1/10.jpg'),
     require('./assets/1/11.jpg'),
@@ -34,7 +34,7 @@ const imageSets = [
   ],
   //*/
 
-  /*
+  //*
   [
     require('./assets/2/1.jpg'),
     require('./assets/2/10.jpg'),
@@ -59,7 +59,7 @@ const imageSets = [
   ],
   //*/
 
-  /*
+  //*
   [
     require('./assets/3/1.jpg'),
     require('./assets/3/10.jpg'),
