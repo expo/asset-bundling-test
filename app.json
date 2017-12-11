@@ -19,7 +19,7 @@
       "bundleIdentifier": "io.expo.asset-bundling-test"
     },
     "android": {
-      "package": "io.expo.asset-bundling-test"
+      "package": "io.expo.asset_bundling_test"
     },
     "assetBundlePatterns": [
       "assets/**"
